@@ -3,4 +3,6 @@ FROM webdevops/php-apache:7.2
 RUN apt-get update && apt-get install -y --no-install-recommends\
         libmagickwand-dev \
     && pecl install imagick-3.4.3 \
-    && docker-php-ext-enable imagick
+    && docker-php-ext-enable imagick \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
