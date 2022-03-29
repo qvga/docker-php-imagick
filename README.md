@@ -1,2 +1,2 @@
 # docker-php-imagick
-php 7.2 w/ imagick
+php 8.0 w/ imagick
